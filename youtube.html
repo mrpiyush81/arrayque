@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Data Fetcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #app {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>YouTube Video Data Fetcher</h1>
+        <label for="youtubeLink">Paste YouTube Video Link:</label>
+        <input type="text" id="youtubeLink" placeholder="Enter YouTube link...">
+        <button onclick="fetchVideoData()">Fetch Data</button>
+    </div>
+
+    <script>
+    
+    //   const p1=new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log('1')
+    //             resolve("promise p1")
+    //         },10000)
+    //   })
+      
+    //   const p2=new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log('2')
+    //             resolve("promise p2")
+    //         },5000)
+    //   })
+      
+    //   const p3=new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             console.log('3')
+    //             resolve("promise p3")
+    //         },7000)
+    //   })
+
+      
+ 
+let a = [
+{
+id: 1,
+age: 21,
+name: 'Jigar',
+},
+{
+id: 2,
+age: 18,
+name: 'Dhaval',
+},
+{
+id: 3,
+age: 20,
+name: 'Nirav',
+},
+{
+id: 4,
+age: 28,
+name: 'Anuj',
+},
+]
+console.log(a)
+const sortUser=[...a].sort((o1,o2)=> {
+    return o1.age-o2.age
+} )
+
+console.log(sortUser)
+
+const age19= a.filter((Element)=>{
+    return Element.age===19;
+}) 
+
+console.log(age19)
+
+allUserName=a.map((Element)=>{
+     return Element.name;
+})
+console.log(allUserName)
+        
+    </script>
+</body>
+</html>

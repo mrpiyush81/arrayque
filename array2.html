@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>array2</title>
+
+    <script>
+      
+let  arr = [
+{
+a: 2,
+b: 5
+}, {
+a: 1,
+b: 3
+}, {
+    a: 4,
+    b: 4
+
+}, {
+    a: 3,
+    b: 1
+},
+]
+
+
+function sortArrayBasedOnkey(arr,key){
+   
+    return arr.sort((ob1,ob2)=> ob1[key] - ob2[key] )
+}
+
+console.log(sortArrayBasedOnkey(arr,"a"));
+ 
+
+
+    </script>
+</body>
+</html>
